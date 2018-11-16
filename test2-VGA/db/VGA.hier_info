@@ -1,0 +1,25 @@
+|VGA
+CLOCK_50 => ~NO_FANOUT~
+LED[0] << <GND>
+LED[1] << <GND>
+LED[2] << <GND>
+LED[3] << <GND>
+LED[4] << <GND>
+LED[5] << <GND>
+LED[6] << <GND>
+LED[7] << <GND>
+GPIO_2[0] <> <UNC>
+GPIO_2[1] <> <UNC>
+GPIO_2[2] <> <UNC>
+GPIO_2[3] <> <UNC>
+GPIO_2[4] <> <UNC>
+GPIO_2[5] <> <UNC>
+GPIO_2[6] <> <UNC>
+GPIO_2[7] <> <UNC>
+GPIO_2[8] <> <UNC>
+GPIO_2[9] <> <UNC>
+GPIO_2[10] <> <UNC>
+GPIO_2[11] <> <UNC>
+GPIO_2[12] <> <UNC>
+
+

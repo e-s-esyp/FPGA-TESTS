@@ -1,0 +1,7849 @@
+|LATENCY
+LED[0] <= timer:inst3.result[0]
+LED[1] <= timer:inst3.result[1]
+LED[2] <= timer:inst3.result[2]
+LED[3] <= timer:inst3.result[3]
+LED[4] <= timer:inst3.result[4]
+LED[5] <= timer:inst3.result[5]
+LED[6] <= timer:inst3.result[6]
+LED[7] <= timer:inst3.result[7]
+CLOCK_50 => timer:inst3.clock
+CLOCK_50 => counter:inst.clock
+
+
+|LATENCY|timer:inst3
+clock => result[0]~reg0.CLK
+clock => result[1]~reg0.CLK
+clock => result[2]~reg0.CLK
+clock => result[3]~reg0.CLK
+clock => result[4]~reg0.CLK
+clock => result[5]~reg0.CLK
+clock => result[6]~reg0.CLK
+clock => result[7]~reg0.CLK
+clock => num[0].CLK
+clock => num[1].CLK
+clock => num[2].CLK
+clock => num[3].CLK
+clock => num[4].CLK
+clock => num[5].CLK
+clock => num[6].CLK
+clock => num[7].CLK
+start => always0.IN0
+stop => always0.IN1
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|counter:inst
+clock => num[0].CLK
+clock => num[1].CLK
+clock => num[2].CLK
+clock => num[3].CLK
+clock => num[4].CLK
+clock => num[5].CLK
+clock => num[6].CLK
+clock => num[7].CLK
+clock => num[8].CLK
+clock => num[9].CLK
+clock => num[10].CLK
+clock => num[11].CLK
+clock => num[12].CLK
+clock => num[13].CLK
+clock => num[14].CLK
+clock => num[15].CLK
+clock => num[16].CLK
+clock => num[17].CLK
+clock => num[18].CLK
+clock => num[19].CLK
+clock => num[20].CLK
+clock => num[21].CLK
+clock => num[22].CLK
+clock => num[23].CLK
+clock => num[24].CLK
+clock => num[25].CLK
+clock => num[26].CLK
+clock => num[27].CLK
+clock => num[28].CLK
+clock => num[29].CLK
+clock => num[30].CLK
+clock => num[31].CLK
+clock => num[32].CLK
+start <= num[10].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst15|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst14|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst13|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst12|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst11|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst10|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst9|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst8|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst7|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst6|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst5|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst4|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst2|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1
+o <= delay100:inst10.o
+i => delay100:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst10
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst10|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst9|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst8|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst7|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst6|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst5|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst4|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst3|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst2|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1
+o <= delay10:inst10.o
+i => delay10:inst1.i
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst10
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst9
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst8
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst7
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst6
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst5
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst4
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst3
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst2
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LATENCY|delay1000:inst1|delay100:inst1|delay10:inst1
+i => s01.DATAIN
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

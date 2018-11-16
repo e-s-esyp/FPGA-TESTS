@@ -1,0 +1,26 @@
+
+
+/home/gene/WORK/myfirst_niosii/DE0_NANO_SOPC.v
+
+Jan 11 09PM:56:54>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/gene/WORK/myfirst_niosii/DE0_NANO_SOPC.v
+
+Jan 11 09PM:56:55>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/gene/WORK/test0-myfirst_niosii/DE0_NANO_SOPC.v
+
+Feb 11 01AM:55:05>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/gene/WORK/test0-myfirst_niosii/DE0_NANO_SOPC.v
+
+Feb 11 01AM:55:07>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/gene/WORK/test0-myfirst_niosii/DE0_NANO_SOPC.v
+
+Feb 11 01AM:55:43>: Megafunction Altera SOPC Builder is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

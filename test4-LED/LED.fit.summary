@@ -1,0 +1,10 @@
+I/O Assignment Analysis Status : Successful - Sun Feb  4 20:30:59 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : LED
+Top-level Entity Name : LED
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total pins : 9 / 154 ( 6 % )
+Total virtual pins : 0
+Total PLLs : 0 / 4 ( 0 % )

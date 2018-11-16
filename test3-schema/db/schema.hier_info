@@ -1,0 +1,5 @@
+|schema
+pin_name1 <= CLOCK_50.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_50 => pin_name1.DATAIN
+
+

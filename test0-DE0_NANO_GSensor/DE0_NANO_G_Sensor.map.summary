@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Feb  3 22:36:32 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : DE0_NANO_G_Sensor
+Top-level Entity Name : DE0_NANO_G_Sensor
+Family : Cyclone IV E
+Total logic elements : 189
+    Total combinational functions : 164
+    Dedicated logic registers : 112
+Total registers : 112
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

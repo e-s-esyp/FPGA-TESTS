@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pin_CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_TMDS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_TMDS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pin_TMDS[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

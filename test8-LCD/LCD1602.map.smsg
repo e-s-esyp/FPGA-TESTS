@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at LCD1602.v(27): always construct contains both blocking and non-blocking assignments File: /home/gene/WORK/test8-LCD/LCD1602.v Line: 27

@@ -1,0 +1,56 @@
+|LED
+LED[0] <= counter:inst.out[0]
+LED[1] <= counter:inst.out[1]
+LED[2] <= counter:inst.out[2]
+LED[3] <= counter:inst.out[3]
+LED[4] <= counter:inst.out[4]
+LED[5] <= counter:inst.out[5]
+LED[6] <= counter:inst.out[6]
+LED[7] <= counter:inst.out[7]
+CLOCK_50 => counter:inst.clock
+
+
+|LED|counter:inst
+clock => num[0].CLK
+clock => num[1].CLK
+clock => num[2].CLK
+clock => num[3].CLK
+clock => num[4].CLK
+clock => num[5].CLK
+clock => num[6].CLK
+clock => num[7].CLK
+clock => num[8].CLK
+clock => num[9].CLK
+clock => num[10].CLK
+clock => num[11].CLK
+clock => num[12].CLK
+clock => num[13].CLK
+clock => num[14].CLK
+clock => num[15].CLK
+clock => num[16].CLK
+clock => num[17].CLK
+clock => num[18].CLK
+clock => num[19].CLK
+clock => num[20].CLK
+clock => num[21].CLK
+clock => num[22].CLK
+clock => num[23].CLK
+clock => num[24].CLK
+clock => num[25].CLK
+clock => num[26].CLK
+clock => num[27].CLK
+clock => num[28].CLK
+clock => num[29].CLK
+clock => num[30].CLK
+clock => num[31].CLK
+clock => num[32].CLK
+out[0] <= num[25].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= num[26].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= num[27].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= num[28].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= num[29].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= num[30].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= num[31].DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= num[32].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,68 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:08:50 FEBRUARY 04,2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 2
+
+set_global_assignment -name TOP_LEVEL_ENTITY "LATENCY"
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to CLOCK_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to CLOCK_50
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_location_assignment PIN_A13 -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_location_assignment PIN_B13 -to LED[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+set_location_assignment PIN_A11 -to LED[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+set_location_assignment PIN_D1 -to LED[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
+set_location_assignment PIN_F3 -to LED[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+set_location_assignment PIN_B1 -to LED[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+set_location_assignment PIN_L3 -to LED[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LED
+set_instance_assignment -name SLEW_RATE 2 -to LED
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+
+
+set_global_assignment -name VERILOG_FILE timer.v
+set_global_assignment -name VERILOG_FILE counter.v
+set_global_assignment -name BDF_FILE LATENCY.bdf
+set_global_assignment -name VERILOG_FILE delay10.v
+set_global_assignment -name BDF_FILE delay100.bdf
+set_global_assignment -name BDF_FILE delay1000.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

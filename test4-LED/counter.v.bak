@@ -1,0 +1,15 @@
+module counter(
+	input clock,
+	output wire [7:0] out
+	);
+
+reg [64:0] num;
+
+always @(posedge clock)
+	begin
+	num <= num + 1;
+	end
+
+assign out = num [64:57];
+	
+endmodule
